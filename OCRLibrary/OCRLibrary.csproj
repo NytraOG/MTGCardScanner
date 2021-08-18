@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Tesseract" Version="4.1.1"/>
+        <PackageReference Include="Tesseract.Drawing" Version="4.1.1"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Update="Tessdata\deu.traineddata">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+        <None Update="Tessdata\eng.traineddata">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+        <None Update="Tessdata\pdf.ttf">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+
+</Project>
